@@ -11,8 +11,13 @@ const connect = function() {
     console.log('Server says: ', data);
   // interpret incoming data as text
 }) 
-
+  conn.on('connect',() =>{
+    console.log(`Server Says: `,'successfully connected to the snake server' )
+})
+conn.on('connect', () => {
+    conn.write("Name: BOB")
   return conn;
+})
 }
 
 
