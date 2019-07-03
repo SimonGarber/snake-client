@@ -11,6 +11,8 @@
         connection.write("Move: down")
     } else if (key === 'd') {
         connection.write("Move: right")
+    } else if (key === '1') {
+        connection.write("Say: TROLOLOLOLOL")
     }
 }
     const setupInput = function(conn) {
